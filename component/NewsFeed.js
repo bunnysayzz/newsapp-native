@@ -8,15 +8,18 @@ const NewsFeed = ({ navigation }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [refresh, onRefresh] = useState(false);
+
   const getResult = async () => {
     setLoading(true);
     const res = await news.getNews();
     setData(res.data.articles);
     setLoading(false);
   };
+
   useEffect(() => {
     getResult();
   }, []);
+
   return (
     <View style={styles.container}>
       {!loading ? (
@@ -49,20 +52,17 @@ const NewsFeed = ({ navigation }) => {
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 50,
     flex: 1,
-    backgroundColor: "#ffcccc",
-    padding: 10,
-    paddingBottom: 50,
+    padding: 20,
   },
   text: {
     fontSize: 20,
-    textAlign: "center",
-    color: "#fc5c65",
-    marginBottom: 15,
     fontWeight: "bold",
+    marginBottom: 10,
   },
 });
+
 export default NewsFeed;

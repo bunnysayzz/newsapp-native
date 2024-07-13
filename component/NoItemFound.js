@@ -1,6 +1,7 @@
 import React from "react";
 import LottieView from "lottie-react-native";
 import { Text, View, StyleSheet } from "react-native";
+
 const NoItemFound = () => {
   return (
     <View style={styles.container}>
@@ -12,6 +13,7 @@ const NoItemFound = () => {
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

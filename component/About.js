@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, StatusBar, Image } from "react-native";
 import Icon from "./Icon";
 import { Linking } from "react-native";
+
 const About = () => {
   return (
     <View style={styles.container}>
@@ -9,8 +10,8 @@ const About = () => {
       <Text style={styles.text}>Saber Basha</Text>
       <Text style={styles.info}>
         Hello I am Saber Basha, Currently pursuing B.tech in Information
-        Technlogy at Madras Institute of Technology. Skilled in MERN Stack
-        development and React Native. Want to collabarate with me?? Feel free to
+        Technology at Madras Institute of Technology. Skilled in MERN Stack
+        development and React Native. Want to collaborate with me? Feel free to
         contact!
       </Text>
       <View style={styles.icons}>
@@ -40,35 +41,31 @@ const About = () => {
 };
 const styles = StyleSheet.create({
   container: {
-    paddingTop: StatusBar.currentHeight,
-    backgroundColor: "#ffcccc",
     flex: 1,
+    justifyContent: "center",
     alignItems: "center",
+    padding: 20,
+  },
+  image: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    marginBottom: 20,
   },
   text: {
     fontSize: 20,
-    marginVertical: 5,
     fontWeight: "bold",
-  },
-  icons: {
-    marginTop: 50,
-    width: "100%",
-    margin: 20,
-    flexDirection: "row",
-    justifyContent: "space-evenly",
+    marginBottom: 10,
   },
   info: {
-    marginHorizontal: 15,
-    marginVertical: 10,
-    fontSize: 20,
+    fontSize: 16,
+    textAlign: "center",
+    marginBottom: 20,
   },
-  image: {
-    height: 200,
-    width: 200,
-    borderRadius: 100,
-    resizeMode: "cover",
-    borderColor: "#ff9999",
-    borderWidth: 5,
+  icons: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    width: "100%",
   },
 });
 export default About;

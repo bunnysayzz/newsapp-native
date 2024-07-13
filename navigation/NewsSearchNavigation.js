@@ -2,13 +2,14 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import NewsInfo from "../component/NewsInfo";
 import SearchNews from "./../component/SearchNews";
+
 const Stack = createStackNavigator();
 
 function NewsSearchNavigation() {
   return (
     <Stack.Navigator
       screenOptions={{ headerShown: false }}
-      initialRouteName="Home"
+      initialRouteName="search"
     >
       <Stack.Screen name="search" component={SearchNews} />
       <Stack.Screen
@@ -19,4 +20,5 @@ function NewsSearchNavigation() {
     </Stack.Navigator>
   );
 }
+
 export default NewsSearchNavigation;

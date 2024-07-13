@@ -16,7 +16,7 @@ const ListingDetails = ({ route }) => {
         <Image style={styles.image} source={{ uri: route.params.urlToImage }} />
         <View style={styles.detailsContainer}>
           <Text style={styles.title}>{route.params.title}</Text>
-          <Text style={styles.subtitle}>{route.params.content}</Text>
+          <Text style={styles.subtitle}>{route.params.description}</Text>
           <View style={styles.shareContainer}>
             <View style={styles.iconContainer}>
               <Icon
