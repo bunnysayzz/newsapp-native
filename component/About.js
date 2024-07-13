@@ -7,29 +7,26 @@ const About = () => {
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={require("../assets/photo.jpg")} />
-      <Text style={styles.text}>Saber Basha</Text>
+      <Text style={styles.text}>Md Azharuddin</Text>
       <Text style={styles.info}>
-        Hello I am Saber Basha, Currently pursuing B.tech in Information
-        Technology at Madras Institute of Technology. Skilled in MERN Stack
-        development and React Native. Want to collaborate with me? Feel free to
-        contact!
+        Hello, I am Md Azharuddin, currently pursuing B.Tech at Lovely Professional University. I love to code and am skilled in JavaScript, React.js, React Native, Express, Jenkins, and Kubernetes. Want to collaborate with me? Feel free to contact!
       </Text>
       <View style={styles.icons}>
         <Icon
           backgroundColor="#ff4d4d"
-          onPress={() => Linking.openURL("mailto:saberbasha752002@gmail.com")}
+          onPress={() => Linking.openURL("mailto:azharsayzz@gmail.com")}
           name={"email"}
           size={50}
         />
         <Icon
-          onPress={() => Linking.openURL("https://github.com/zero7zero5")}
+          onPress={() => Linking.openURL("https://github.com/bunnysayzz")}
           backgroundColor="#ff4d4d"
           name={"github"}
           size={50}
         />
         <Icon
           onPress={() =>
-            Linking.openURL("https://www.linkedin.com/in/saber-basha-s/")
+            Linking.openURL("https://www.linkedin.com/in/md-azharuddin-85742b221/")
           }
           backgroundColor="#ff4d4d"
           name={"linkedin"}
@@ -39,6 +36,7 @@ const About = () => {
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -68,4 +66,5 @@ const styles = StyleSheet.create({
     width: "100%",
   },
 });
+
 export default About;
