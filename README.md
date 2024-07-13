@@ -3,7 +3,7 @@
 
 Welcome to the React Native News App! This application delivers the latest news headlines directly to your mobile device. It's designed with a simple and intuitive user interface, making it easy to stay updated with current events.
 
-![Screenshot](./path/to/scr.jpg)
+![Screenshot](./scr.jpg)
 
 ## Features
 
